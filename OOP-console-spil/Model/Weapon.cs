@@ -19,6 +19,6 @@ using System.Threading.Tasks;
             UsesLeft = usesreft;
         }
 
-   
+
 }
 

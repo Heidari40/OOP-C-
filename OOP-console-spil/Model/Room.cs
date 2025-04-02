@@ -14,8 +14,9 @@ public class Room
     public Room Syd { get; set; }
     public Room Øst { get; set; }
     public Room Vest { get; set; }
-    
-    public Room (int id, string name, string disciption, List<Item> items, Room nord, Room syd, Room øst, Room vest)
+    public List<Monster> Monsters { get; internal set; }
+
+    public Room (int id, string name, string disciption, List<Item> items, Room nord, Room syd, Room øst, Room vest, List<Monster> monsters)
     {
         Id = id;
         Name = name;
@@ -25,6 +26,7 @@ public class Room
         Syd = syd;
         Øst = øst;
         Vest = vest;
+        Monsters = new List<Monster>();
     }
     public override string ToString()
     {
